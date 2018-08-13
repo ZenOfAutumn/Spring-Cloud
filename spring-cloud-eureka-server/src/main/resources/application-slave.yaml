@@ -1,0 +1,13 @@
+
+
+spring:
+  application:
+    name: hello-service
+
+  eureka:
+    service-url:
+       default-zone: http://master:8761/eureka/,http://slave:8762/eureka/
+
+server:
+  port: 9091
+  max-http-header-size: 8192

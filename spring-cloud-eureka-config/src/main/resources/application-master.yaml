@@ -1,0 +1,21 @@
+server:
+  port: 8761
+
+
+eureka:
+ instance:
+   hostname: master
+
+ client:
+   register-with-eureka: true
+   fetch-registry: false
+   service-url:
+     default-zone: http://slave:8762/eureka/
+ server:
+   enable-self-preservation: false
+spring:
+  application:
+    name: eureka-config
+
+
+

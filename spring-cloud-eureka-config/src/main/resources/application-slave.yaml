@@ -1,0 +1,21 @@
+server:
+  port: 8762
+
+
+eureka:
+ instance:
+   hostname: slave
+
+ client:
+   register-with-eureka: true
+   fetch-registry: false
+   service-url:
+     default-zone: http://master:8761/eureka/
+ server:
+   enable-self-preservation: false
+spring:
+  application:
+    name: eureka-config
+
+
+

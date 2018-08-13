@@ -1,0 +1,10 @@
+server:
+  port: 10000
+spring:
+  application:
+    name: ribbon-consumer
+
+  eureka:
+    service-url:
+       default-zone: http://master:8761/eureka/,http://slave:8762/eureka/
+
